@@ -1,0 +1,42 @@
+h1 {
+    color: aqua;
+    background-color: black;
+    animation: movearound;
+    animation-duration: 10s;
+}
+div { 
+    position: relative;       
+    animation: movesideways;
+    animation-duration: 6s;
+}
+div2 { 
+    position: relative;       
+    animation: movesidecar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+div3 { 
+    position: relative;       
+    animation: movesidecar;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes movesideways {
+    0% { background-color:red; transform: rotate(50deg); left:0px;top: 0px; }
+    50% { background-color:blue; left:1000px; top: 500px;}
+    100% {background-color:greenyellow; left:0px; top: 0px;}
+}
+
+@keyframes movesidecar {
+    0% {  left:0px;top: 0px; }
+    50% { left:1000px; top: 500px;}
+    100% { left:0px; top: 0px;}
+}
+
+@keyframes movearound {
+    50% {transform: rotate(180deg); background-color:blue;left:200px;}
+    10% {transform: rotate(90deg); background-color:red;left:0px;}
+    100% {transform: rotate(360deg);background-color:greenyellow; left:100px;}
+}
