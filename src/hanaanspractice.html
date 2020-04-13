@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function changecolor() {
+            document.querySelector("h1").style.color = "maroon";
+        }
+        function changecolorback() {
+            document.querySelector("h1").style.color = "powderblue";
+        }
+    
+        function changeDiv(){
+            document.querySelector("#hello").innerHTML = "Hello, " + document.querySelector("#typingbox").value;
+        }
+    
+    </script>
+    
+    <h1 onmouseover="changecolor()" onmouseout="changecolorback()">
+        Hello, hover over HERE!!
+    </h1>
+    
+    <label for="typing-box">Write your name in this box!</label>
+    <input type="text" name="typing-box" id="typingbox" onkeyup="changeDiv()"/>
+    
+    <div id="hello"></div>
+
+<br>
+This is a maths game I made!!! :)
+<div/>
+<br>
+    <script>
+        function mark(a, b, c, d) {
+            let myspan = document.querySelector(c);
+    
+            myspan.style.visibility = "visible";
+            if (document.querySelector(d).value == (a + b)) {            
+                let x = document.createElement("IMG");
+                x.setAttribute("src","imgs/happy-emoji.png");
+                x.setAttribute("alt","YOU GOT IT RIGHT!!!!");
+                myspan.appendChild(x);
+            } else {
+                let x = document.createElement("IMG");
+                x.setAttribute("src","imgs/sad_wonkyfaceemoji.jpeg");
+                x.setAttribute("alt","sad times... you got it wrong...");
+                myspan.appendChild(x);
+            }
+        }
+    
+    </script>
+    
+    <body>
+        <label for="answer-box">5+3=</label>
+        <input type="number" name="answer-box" id="answerbox">
+        <input type="button" value="check my answer" onclick="mark(5, 3,'#checkresult', '#answerbox')">
+        <span id="checkresult" style="visibility: hidden;"></span>
+        
+        <br />
+        <p/>
+        
+        <label for="answer-box2">9+7=</label>
+        <input type="number" name="answer-box2" id="answerbox2">
+        <input type="button" value="check my answer" onclick="mark(9, 7, '#checkresult2', '#answerbox2')">
+        <span id="checkresult2" style="visibility: hidden;"></span>
+        
+        <br />
+        <p/>
+    
+        <label for="answer-box3">10+54=</label>
+        <input type="number" name="answer-box3" id="answerbox3">
+        <input type="button" value="check my answer" onclick="mark(10, 54, '#checkresult3', '#answerbox3')">
+        <span id="checkresult3" style="visibility: hidden;"></span>
+    
+    
+    </body>
+
+    </html>
