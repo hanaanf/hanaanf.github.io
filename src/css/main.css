@@ -1,3 +1,6 @@
+body {
+    background-image: linear-gradient(to right, powderblue, powderblue )
+}
 h1 {
     color: aqua;
     background-color: black;
@@ -23,6 +26,12 @@ div3 {
     animation-timing-function: ease-out;
 }
 
+img { 
+    position: relative;       
+    animation: spinny;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+}
 @keyframes movesideways {
     0% { background-color:red; transform: rotate(50deg); left:0px;top: 0px; }
     50% { background-color:blue; left:1000px; top: 500px;}
@@ -39,4 +48,8 @@ div3 {
     50% {transform: rotate(180deg); background-color:blue;left:200px;}
     10% {transform: rotate(90deg); background-color:red;left:0px;}
     100% {transform: rotate(360deg);background-color:greenyellow; left:100px;}
+}
+
+@keyframes spinny {
+    0% {transform: rotate(360deg); }
 }

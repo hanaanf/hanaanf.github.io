@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="css/main.css">
 <script>
     function mark(a, b, c, d) {
         let myspan = document.querySelector(c);
 
         myspan.style.visibility = "visible";
-        if (document.querySelector(d).value == (a + b)) {
-            
+        if (document.querySelector(d).value == (a + b)) {            
             let x = document.createElement("IMG");
             x.setAttribute("src","img/happy-emoji.png");
             x.setAttribute("alt","YOU GOT IT RIGHT!!!!");
@@ -14,7 +14,7 @@
         } else {
             let x = document.createElement("IMG");
             x.setAttribute("src","img/sad_wonkyfaceemoji.jpeg");
-            x.setAttribute("alt","sad times... you got it wrong..");
+            x.setAttribute("alt","sad times... you got it wrong...");
             myspan.appendChild(x);
         }
     }
