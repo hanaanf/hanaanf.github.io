@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function mark(a, b, c , d){
+            if (document.querySelector(c).value == a+b) {
+                document.querySelector(d).innerHTML = ":)";
+            } else {
+                document.querySelector(d).innerHTML = ":( you got it wrong.... sad times... try again...";
+            }
+        }
+    </script>
+    <body>
+        <label for="checkresult">7+400=</label>
+        <input type="number" name="checkresult" id="number-box">
+        <input type="button" value=" MARK " onclick="mark(7, 400, '#number-box', '#emojidiv')">
+        <div id="emojidiv"></div>
+        
+    </body>
+</html>
