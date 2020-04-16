@@ -1,6 +1,45 @@
 body {
     background-image: linear-gradient(to right, powderblue, powderblue )
 }
+.common {
+    font-size: 20em;
+    font-family: Luminari, Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px 40px 40px 40px ;
+}
+
+first-number {
+    color: red;    
+}
+
+operation, equals {
+    color: blue;    
+}
+
+second-number {
+    color: green;    
+}
+
+.boxsize {
+    font-size: 17em;
+    width: 3em;
+    background-color: palegoldenrod;
+    font-family: Luminari, Verdana, Geneva, Tahoma, sans-serif;
+    color: rebeccapurple;
+}
+
+button {
+    font-family: Luminari, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5em;
+    padding: 40px 40px;
+    background-color: thistle;
+    margin: 80px 40px;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: greenyellow;
+}
+
 h1 {
     color: aqua;
     background-color: black;

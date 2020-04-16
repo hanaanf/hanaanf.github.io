@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <script>
-        function mark(a, b, c , d){
-            if (document.querySelector(c).value == a+b) {
-                document.querySelector(d).innerHTML = ":)";
-            } else {
-                document.querySelector(d).innerHTML = ":( you got it wrong.... sad times... try again...";
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="css/main.css">
     <body>
-        <label for="checkresult">7+400=</label>
-        <input type="number" name="checkresult" id="number-box">
-        <input type="button" value=" MARK " onclick="mark(7, 400, '#number-box', '#emojidiv')">
-        <div id="emojidiv"></div>
-        
+        <first-number class="common">7</first-number>
+        <operation class="common">+</operation>
+        <second-number class="common">5</second-number>
+        <equals class="common">=</equals>
+        <input type="number" name="num-box" id="numbox" class="boxsize"> 
+        <button> CHECK </button>
+        <results></results>
+        <character></character>
     </body>
 </html>
