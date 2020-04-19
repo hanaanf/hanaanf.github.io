@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="css/main.css">
-    <body>
-        <first-number class="common">7</first-number>
-        <operation class="common">+</operation>
-        <second-number class="common">5</second-number>
-        <equals class="common">=</equals>
-        <input type="number" name="num-box" id="numbox" class="boxsize"> 
-        <button> CHECK </button>
-        <results></results>
-        <character></character>
-    </body>
+<link rel="stylesheet" href="css/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/main.js"></script>
+<body>
+    <question class="row">
+        <span class="col-2"></span>
+        <first-number class="common col-1">7</first-number>
+        <operation class="common col-1">+</operation>
+        <second-number class="common col-1">5</second-number>
+        <equals class="common col-1">=</equals>
+        <input type="number" name="num-box" id="numbox" class="boxsize col-2">
+        <button class="col-2" onclick="mark()"> CHECK </button>
+        <span class="col-2"></span>
+    </question>
+
+    <characters-pane class="row">
+        <character class="pos-neutral col-9"></character>
+    </characters-pane>
+
+    <results-pane class="row">
+        <span class="col-5"></span>
+        <results class="common col-3">0/5</results>
+    </results-pane>
+
+</body>
+
 </html>

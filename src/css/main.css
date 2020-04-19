@@ -1,10 +1,37 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
 body {
     background-image: linear-gradient(to right, powderblue, powderblue )
 }
 .common {
-    font-size: 20em;
+    font-size: 8vw;
     font-family: Luminari, Verdana, Geneva, Tahoma, sans-serif;
-    padding: 40px 40px 40px 40px ;
 }
 
 first-number {
@@ -20,24 +47,46 @@ second-number {
 }
 
 .boxsize {
-    font-size: 17em;
-    width: 3em;
+    font-size: 8vw;
     background-color: palegoldenrod;
     font-family: Luminari, Verdana, Geneva, Tahoma, sans-serif;
     color: rebeccapurple;
 }
 
 button {
+    font-size: 2vw;
     font-family: Luminari, Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 5em;
-    padding: 40px 40px;
-    background-color: thistle;
-    margin: 80px 40px;
+    margin: 4% 2%;
+    background-color: thistle;    
     border-radius: 50%;
 }
 
 button:hover {
     background-color: greenyellow;
+}
+
+.pos-neutral  {
+    width: 350px;
+    height: 314px;
+    background: url("../img/the-best-cheese.jpg") -20px 0px;  
+  }
+
+.pos-first-wrong {
+    width: 308px;
+    height: 360px;
+    background: url("../img/the-best-cheese.jpg") -350px -309px;  
+}
+
+.pos-second-wrong {
+    width: 277px;
+    height: 320px;
+    background: url("../img/the-best-cheese.jpg") -994px -326px;  
+}
+
+.pos-first-right {
+    width: 308px;
+    height: 280px;
+    background: url("../img/the-best-cheese.jpg") -350px -669px;  
 }
 
 h1 {
