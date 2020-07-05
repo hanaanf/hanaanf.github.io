@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+    <title>
+    Practice
+    </title>
+
+        <h1 onmouseover="changecolor()" onmouseout=" changecolorback()">
+            Boy Girl Dog Cat Mouse Cheese
+        </h1>
+
+    
+    <br/>
+<div>
+
+    <img src="../src/img/hanaanspracticeboygirldogcatmousecheese.jpg" alt="eek">
+
+</div>
+<br/>
+<br/>
+    <body>
+
+        <h3 onmouseover="changecolor1()" onmouseout=" changecolorback1()"> Boy Girl Dog Cat Mouse Cheese is a fictional programme about the adventures of a hilariously bonkers family!!!</h3>
+
+        <br/>
+
+
+<div>
+        <label for="answer-box">How many times a week do you watch this programme?</label>
+        <input type="number" id="answerboxid" min="0" max="100">
+
+        <p/>
+        <br/>
+
+        <label for="response-box">What do you think of this programme?</label>
+        <input type="text" id="responseboxid">
+
+
+        <p/>
+        <br/>
+
+        <label for="name-box">What is your name?</label>
+        <input type="text" id="nameboxid">
+
+        <p/>
+        <br/>
+
+        <label for="birthday-box">When is your birthday?</label>
+        <input type="date" id="birthdayboxid">
+
+        <p/>
+        <br/>
+
+        <button type="button" style="width: 130px; height: 60px; border-radius: 12px; background-color: aqua;font-size: 16px;" onclick="displaystuff()">
+            Click me!!!!
+        </button>
+
+</div>
+
+<canvas id="displaybox" width="1000" height="500">
+    
+</canvas>
+
+
+    </body>
+    
+<script>
+
+    function changecolor() {
+        document.querySelector("h1").style.color = "hotpink";          
+    }
+    function changecolorback() {
+        document.querySelector("h1").style.color = "darkblue";          
+    }
+
+    function changecolor1() {
+        document.querySelector("h3").style.color = "aqua";          
+    }
+    function changecolorback1() {
+        document.querySelector("h3").style.color = "purple";          
+    }
+
+    function displaystuff() {
+        let myText = "Hi " + document.querySelector("#nameboxid").value + ".";
+        myText2 = "I know you watch this program " + document.querySelector("#answerboxid").value + " times a week!" ;
+        myText3 = "I also know your opinion about the programme... * " + document.querySelector("#responseboxid").value + " *.";
+        myText4 = "You were born on " + document.querySelector("#birthdayboxid").value + "."; 
+        let canvas = document.querySelector("#displaybox");
+        let ctx = canvas.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillStyle = "white";        
+        ctx.fillText(myText, 10, 30);
+        ctx.fillText(myText2, 10, 60);
+        ctx.fillText(myText3, 10, 90);
+        ctx.fillText(myText4, 10, 120);
+    }
+
+</script>
+
+<style>
+    body {
+        background-image: linear-gradient(to right, rgb(129, 82, 194), powderblue )
+    }
+</style>
+
+</html>

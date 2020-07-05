@@ -68,25 +68,25 @@ button:hover {
 .pos-neutral  {
     width: 350px;
     height: 314px;
-    background: url("../img/the-best-cheese.jpg") -20px 0px;  
+    background: url("../img/the-best-cheese-removebg.png") -20px 0px;  
   }
 
 .pos-first-wrong {
     width: 308px;
     height: 360px;
-    background: url("../img/the-best-cheese.jpg") -350px -309px;  
+    background: url("../img/the-best-cheese-removebg.png") -350px -309px;  
 }
 
 .pos-second-wrong {
     width: 277px;
     height: 320px;
-    background: url("../img/the-best-cheese.jpg") -994px -326px;  
+    background: url("../img/the-best-cheese-removebg.png") -994px -326px;  
 }
 
 .pos-first-right {
     width: 308px;
     height: 280px;
-    background: url("../img/the-best-cheese.jpg") -350px -669px;  
+    background: url("../img/the-best-cheese-removebg.png") -350px -669px;  
 }
 
 h1 {
